@@ -1,6 +1,7 @@
 # Python (Cachés y archivos compilados)
 __pycache__/
-*.py[cod]
+python/
+*.py
 *$py.class
 .pytest_cache/
 .bytecode/
