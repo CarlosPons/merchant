@@ -1,0 +1,26 @@
+# Python (Cachés y archivos compilados)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.bytecode/
+
+# Entornos virtuales (por si creas uno local para dependencias)
+venv/
+.venv/
+env/
+ENV/
+
+# Configuración de Editores (WebStorm / PhpStorm / VSCode)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Archivos del Sistema Operativo (macOS)
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
