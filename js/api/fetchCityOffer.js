@@ -14,7 +14,7 @@ async function fetchCityOffer(tableHead, dataBody) {
     const cityId = merchants[0].currentCity;
 
     const [resInventory, resResources, resCities] = await Promise.all([
-        fetch(`${BASE_REST_URL}/CityInventory?idCity=eq.${cityId}&quantity=gt.0&select=*`, { headers }).then(r => r.json()),
+        fetch(`${BASE_REST_URL}/CityInventory?idCity=eq.${cityId}&quantity=gt.0&select=*&order=idResource.asc`, { headers }).then(r => r.json()),
         fetch(`${BASE_REST_URL}/Resource?select=*&order=group.asc`, { headers }).then(r => r.json()),
         fetch(`${BASE_REST_URL}/City?id=eq.${cityId}&select=name`, { headers }).then(r => r.json())
     ]);

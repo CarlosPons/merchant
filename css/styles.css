@@ -23,12 +23,12 @@ body {
 header { 
     margin-bottom: 30px; 
     text-align: center; 
-    border-bottom: 1px solid #29292e; 
+    border-bottom: 1px solid #67f5ff; 
     padding-bottom: 20px; 
 }
 
 h1 { 
-    color: #882f1c; 
+    color: #67f5ff; 
     font-size: 24px; 
     margin-bottom: 10px; 
 }
