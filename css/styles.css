@@ -23,12 +23,12 @@ body {
 header { 
     margin-bottom: 30px; 
     text-align: center; 
-    border-bottom: 1px solid #67f5ff; 
+    border-bottom: 1px solid #dbb98a; 
     padding-bottom: 20px; 
 }
 
 h1 { 
-    color: #67f5ff; 
+    color: #dbb98a; 
     font-size: 24px; 
     margin-bottom: 10px; 
 }
@@ -87,9 +87,9 @@ p.subtitle {
 }
 
 .tab-button.active { 
-    color: #67f5ff; 
+    color: #dbb98a; 
     background-color: #202024; 
-    border-bottom: 2px solid #67f5ff; 
+    border-bottom: 2px solid #dbb98a; 
 }
 
 .table-container { 
@@ -163,31 +163,4 @@ tr:hover td {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.map-label.athenae {
-    position: absolute;
-    /* Ubicación sobre el marcador [5] */
-    top: 50.1%; 
-    left: 64.2%;
-    
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal; 
-    font-size: 12px;
-    letter-spacing: 0px;
-    
-    /* Tinta original del pergamino (un poco más suave y translúcida) */
-    color: rgba(94, 69, 45);
-    
-    /* Desplazamos los radios de desenfoque hacia fuera para que no engruesen la letra */
-    text-shadow: 
-        0 0 6px  #ebd7b2,
-        0 0 10px #ebd7b2,
-        0 0 16px #f1dfc1;
-    
-    /* El filtro ahora solo ilumina la periferia sin pisar los trazos finos */
-    filter: drop-shadow(0px 0px 2px #ebd7b2);
-    
-    pointer-events: none;
-    transform: translate(-50%, -50%);
 }

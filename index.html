@@ -12,19 +12,17 @@
             <h1>Mercaderes y piratas</h1>
         </header>
 
-        <!-- <img src="mapa.jpg" alt="Mapa del Mar Mediterráneo" style="width: 75%; height: auto; display: block; margin: 0 auto 20px auto;"> -->
         <div class="map-container">
-            <img src="mapa.jpg" alt="Mare Mediterranevm" class="map-image">
-            <div class="map-label athenae">ATHENAE</div>
+            <img src="mapa.png" alt="Mare Mediterranevm" class="map-image">
         </div>
 
         <div id="statusMessage" class="status"></div>
 
         <div class="tabs-container">
-            <button class="tab-button active" data-table="Resource">Mercancías</button>
+            <button class="tab-button" data-table="Resource">Mercancías</button>
             <button class="tab-button" data-table="City">Oportunidades</button>
             <button class="tab-button" data-table="CityConnection">Rutas</button>
-            <button class="tab-button" data-table="Merchant">Mercader</button>
+            <button class="tab-button active" data-table="Merchant">Mercader</button>
             <button class="tab-button" data-table="Spy">Espías</button>
             <button class="tab-button" data-table="CityOffer">Comprar/Vender</button>
         </div>
@@ -44,6 +42,7 @@
 
     <script src="js/config.js"></script>
     <script src="js/api/fetchStandard.js"></script>
+    <script src="js/api/fetchCityConnection.js"></script>
     <script src="js/api/fetchMerchant.js"></script>
     <script src="js/api/fetchSpy.js"></script>
     <script src="js/api/fetchCityOffer.js"></script>

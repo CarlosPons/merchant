@@ -1,6 +1,6 @@
 // Manejo de la interfaz de usuario, control de pestañas y estados
 
-let currentTable = 'Resource';
+let currentTable = 'Merchant';
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData(currentTable);
@@ -30,6 +30,8 @@ async function fetchData(table) {
             await fetchMerchantWithInventory(tableHead, dataBody);
         } else if (table === 'Spy') {
             await fetchSpyTable(tableHead, dataBody);
+        } else if (table === 'CityConnection') {
+            await fetchCityConnectionTable(tableHead, dataBody);
         } else if (table === 'CityOffer') {
             await fetchCityOffer(tableHead, dataBody);
             await fetchCityDemand(tableHead, dataBody);
