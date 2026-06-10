@@ -25,6 +25,11 @@ async function fetchData(table) {
     dataBody.innerHTML = '';
     loadingDiv.style.display = 'block';
 
+    const routeContainer = document.getElementById('specific-container');
+    if (routeContainer) {
+        routeContainer.remove();
+    }
+
     try {
         if (table === 'Merchant') {
             await fetchMerchantWithInventory(tableHead, dataBody);
@@ -32,6 +37,8 @@ async function fetchData(table) {
             await fetchSpyTable(tableHead, dataBody);
         } else if (table === 'CityConnection') {
             await fetchCityConnectionTable(tableHead, dataBody);
+        } else if (table === 'Message') {
+            await fetchGlobalMessagesTable(tableHead, dataBody);
         } else if (table === 'CityOffer') {
             await fetchCityOffer(tableHead, dataBody);
             await fetchCityDemand(tableHead, dataBody);
